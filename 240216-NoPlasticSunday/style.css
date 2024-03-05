@@ -1,0 +1,740 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: BlackTie;
+  src: url(./img/BlackTie-Medium-webfont.woff2);
+}
+@font-face {
+  font-family: fontawesome;
+  src: url(./img/fontawesome-webfont.woff2);
+}
+@font-face {
+  font-family: Plipop;
+  src: url(./img/Plipop-Social-Icons.ttf);
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  font-size: 80px;
+  z-index: 99;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0px 50px;
+  font-size: 20px;
+  z-index: 98;
+  background: #fff;
+}
+header .header-inner {
+  width: 75%;
+  height: 100%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-inner h1 {
+  width: 235px;
+  height: 45px;
+}
+header .header-inner h1 img {
+  width: 100%;
+  height: 100%;
+}
+header .header-inner .menu {
+  width: 50%;
+  justify-content: space-between;
+  font-weight: 600;
+}
+header .header-inner .sub {
+  gap: 15px;
+}
+header .header-inner .sub .search a::before {
+  content: "\f002";
+  font-family: BlackTie;
+  font-size: 21px;
+  font-weight: 700;
+}
+header .header-inner .sub .login a::before {
+  content: "\f2c0";
+  font-family: fontawesome;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+ul.nav {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+}
+ul.nav li {
+  margin: 15px;
+}
+ul.nav li a {
+  background: #fff;
+  border-radius: 99px;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: 1px solid #000;
+}
+ul.nav li a.on {
+  background: #000;
+}
+
+.top-btn {
+  display: none;
+  position: fixed;
+  bottom: 3%;
+  right: 0.5%;
+  z-index: 99;
+  transform: translate(-50%, -50%);
+}
+.top-btn a {
+  background: #000;
+  color: #fff;
+  border-radius: 99px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+  font-weight: 700;
+}
+.top-btn a:hover {
+  background: #fff500;
+  color: #000;
+}
+
+#section1 .swiper {
+  width: 100%;
+  height: 100%;
+}
+#section1 .swiper .swiper-slide {
+  position: relative;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1 .swiper .swiper-slide article {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 45%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#section1 .swiper .swiper-slide article span {
+  font-size: 22px;
+  font-weight: 700;
+}
+#section1 .swiper .swiper-slide article h2 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+#section1 .swiper .swiper-slide article p {
+  font-size: 20px;
+}
+#section1 .swiper .swiper-slide article .btn {
+  margin-top: 30px;
+  gap: 20px;
+}
+#section1 .swiper .swiper-slide article .btn a {
+  background: #fff;
+  border-radius: 99px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+#section1 .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#section2 {
+  text-align: center;
+}
+#section2 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+#section2 h3 {
+  font-size: 27px;
+  font-weight: 500;
+}
+#section2 .banner {
+  width: 75%;
+  margin: 50px auto 0px;
+  gap: 20px;
+}
+#section2 .banner li {
+  flex: 1;
+}
+#section2 .banner li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  filter: grayscale(1) blur(1px);
+  transition: 0.5s;
+}
+#section2 .banner li img.on {
+  filter: grayscale(0);
+}
+
+#section3 {
+  background: #f5f5f5;
+  text-align: center;
+  position: relative;
+}
+#section3 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+#section3 ul {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  gap: 30px;
+}
+#section3 ul li {
+  width: calc((100% - 60px) / 3);
+}
+#section3 ul li h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+#section3 ul li p {
+  font-size: 18px;
+  color: rgb(175, 175, 175);
+}
+#section3 ul li img {
+  width: 50%;
+}
+
+#section4 {
+  text-align: center;
+}
+#section4 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+#section4 h3 {
+  font-size: 27px;
+  font-weight: 500;
+}
+#section4 ul {
+  width: 75%;
+  height: 45%;
+  margin: 100px auto 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#section4 ul li {
+  width: 12.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section4 ul li img {
+  width: 100%;
+}
+
+#section5 {
+  position: relative;
+  text-align: center;
+  background: #fff500;
+}
+#section5 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+#section5 h3 {
+  font-size: 27px;
+  font-weight: 500;
+}
+#section5 ul {
+  width: 75%;
+  margin: 50px auto 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+#section5 ul li {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+#section5 ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#section5 ul li:nth-child(1) {
+  background: url(./img/photo_1.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(1) a::after {
+  content: "큐클리프 아이폰14 케이스";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(1) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(2) {
+  background: url(./img/photo_2.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(2) a::after {
+  content: "큐클리프 갤럭시 Z플립 케이스";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(2) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(3) {
+  background: url(./img/photo_3.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(3) a::after {
+  content: "니트생활자 행성 키링";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(3) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(4) {
+  background: url(./img/photo_4.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(4) a::after {
+  content: "비글루 로봇 키링";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(4) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(5) {
+  background: url(./img/photo_5.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(5) a::after {
+  content: "레인보우커뮤니케이션 번호판";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(5) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(6) {
+  background: url(./img/photo_6.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(6) a::after {
+  content: "아미코스메틱 비누받침";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(6) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(7) {
+  background: url(./img/photo_7.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(7) a::after {
+  content: "리오홀딩스 사막여우 키링";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(7) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(8) {
+  background: url(./img/photo_8.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(8) a::after {
+  content: "환경재단 가을시티 키링";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(8) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(9) {
+  background: url(./img/photo_9.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(9) a::after {
+  content: "환경재단 하르방 동백꽃 키링";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(9) a:hover::after {
+  opacity: 1;
+}
+#section5 ul li:nth-child(10) {
+  background: url(./img/photo_10.jpg) center no-repeat;
+  background-size: cover;
+}
+#section5 ul li:nth-child(10) a::after {
+  content: "똑똑한 개발자 튜브짜개";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.35s;
+}
+#section5 ul li:nth-child(10) a:hover::after {
+  opacity: 1;
+}
+#section5 .btn {
+  position: absolute;
+  background: #000;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px;
+  bottom: 3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.35s;
+  font-weight: 700;
+}
+#section5 .btn:hover {
+  background: #fff500;
+  color: #000;
+}
+
+#section6 {
+  position: relative;
+}
+#section6 .text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section6 .text .text-inner {
+  width: 50%;
+  height: 40%;
+  position: relative;
+}
+#section6 .text .text-inner h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+#section6 .text .text-inner h3 {
+  font-size: 27px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+#section6 .text .text-inner .btn {
+  position: absolute;
+  display: block;
+  left: 14%;
+  bottom: 10%;
+  background: #fff500;
+  color: #000;
+  border-radius: 50px;
+  padding: 10px;
+  transform: translate(-50%, -50%);
+  transition: 0.35s;
+  font-weight: 700;
+}
+#section6 .text .text-inner .btn:hover {
+  background: #000;
+  color: #fff;
+}
+#section6 .swiper {
+  width: 500px;
+  height: 330px;
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#section6 .swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+#section6 .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+#section7 {
+  height: 70vh;
+  position: relative;
+  background: #f5f5f5;
+  text-align: center;
+}
+#section7 h2 {
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 120px;
+}
+#section7 h3 {
+  font-size: 27px;
+  font-weight: 500;
+}
+#section7 ul {
+  position: absolute;
+  width: 75%;
+  left: 50%;
+  top: 65%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  gap: 30px;
+}
+#section7 ul li {
+  width: calc((100% - 100px) / 3);
+}
+#section7 ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  background: #fff;
+}
+#section7 ul li a h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+#section7 ul li a p {
+  font-size: 18px;
+}
+
+footer {
+  background: #fff500;
+  padding: 50px 0px;
+}
+footer div.flex {
+  width: 75%;
+  margin: auto;
+  justify-content: space-between;
+}
+footer div.flex a:hover {
+  opacity: 50%;
+}
+footer div.flex .footer-menu {
+  justify-content: left;
+  gap: 100px;
+}
+footer div.flex .footer-menu p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+footer div.flex .footer-menu a {
+  font-size: 16px;
+  font-weight: 700;
+}
+footer div.flex .footer-menu .sns {
+  gap: 10px;
+}
+footer div.flex .footer-menu .sns li:nth-child(1) a::before {
+  content: "ꄗ";
+  font-family: Plipop;
+  font-size: 35px;
+  font-weight: 100;
+}
+footer div.flex .footer-menu .sns li:nth-child(2) a::before {
+  content: "ꄣ";
+  font-family: Plipop;
+  font-size: 35px;
+  font-weight: 100;
+}
+footer div.flex .footer-menu .sns li:nth-child(3) a::before {
+  content: "ꄩ";
+  font-family: Plipop;
+  font-size: 35px;
+  font-weight: 100;
+}
+footer div.flex .cus-sen {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer div.flex .cus-sen p {
+  font-size: 22px;
+  font-weight: 700;
+}
+footer div.flex .cus-sen .num {
+  font-size: 20px;
+  font-weight: 700;
+}
+footer div.flex .cus-sen .num li:nth-child(1) a::before {
+  content: "";
+  background: url(./img/comment-dots-solid.svg) center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+footer div.flex .cus-sen .num li:nth-child(2)::before {
+  content: "";
+  background: url(./img/phone-solid.svg) center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+footer div.flex .cus-sen .num li:nth-child(3) a::before {
+  content: "";
+  background: url(./img/envelope-solid.svg) center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+}
+footer .footer-footer {
+  width: 75%;
+  margin: 30px auto 0px;
+  font-size: 14px;
+}
+footer .footer-footer ul {
+  gap: 10px;
+}
+footer .footer-footer a:hover {
+  font-weight: 700;
+}
