@@ -1,0 +1,298 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+img {
+  vertical-align: top;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-image: url(./img/visual_main.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body::after {
+  content: "";
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 99;
+}
+header h1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+header .menu1 {
+  font-size: 22px;
+}
+header .menu1 li a {
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+}
+header .menu1 li a.on {
+  font-weight: 900;
+}
+header .menu1 li a:hover {
+  font-weight: 900;
+}
+header .footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+}
+header .footer .menu2 {
+  padding: 20px;
+}
+header .footer .menu2 li {
+  padding: 5px;
+}
+header .footer .menu2 li a {
+  display: block;
+}
+header .footer .menu2 li a:hover {
+  font-weight: 700;
+}
+header .footer .menu3 li a {
+  display: block;
+  padding: 5px;
+}
+header .footer .menu3 li a.point {
+  color: #fbe85e;
+}
+header .footer .menu3 li a:hover {
+  font-weight: 700;
+}
+header .link {
+  background-color: #000;
+  justify-content: space-around;
+  padding: 15px 0px;
+}
+header p {
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.button {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+  z-index: 99;
+  gap: 20px;
+}
+.button li a {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.button li a.left {
+  display: none;
+  transition: 0.5s;
+}
+.button li a.on {
+  display: block;
+}
+
+section {
+  position: relative;
+  width: 1900px;
+  height: 100%;
+  justify-content: space-between;
+  margin-left: 250px;
+  background-color: #fff;
+}
+section article {
+  width: 380px;
+  height: 100%;
+  overflow: auto;
+}
+section article:nth-child(1) .top {
+  background: url(./img/visual_info@2x.jpg) center;
+  background-size: 250%;
+}
+section article:nth-child(2) .top {
+  background: url(./img/visual_donation@2x.jpg) center;
+  background-size: 250%;
+}
+section article:nth-child(3) .top {
+  background: url(./img/visual_spa@2x.jpg) center;
+  background-size: 250%;
+}
+section article:nth-child(4) .top {
+  background: url(./img/visual_shop@2x.jpg) center;
+  background-size: 250%;
+}
+section article:nth-child(5) .top {
+  background: url(./img/visual_b2b@2x.jpg) center;
+  background-size: 250%;
+}
+section article .top {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  color: #fff;
+  border-bottom: 5px solid #000;
+}
+section article .top::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+section article .top .text {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  z-index: 90;
+}
+section article .title {
+  width: 90%;
+  margin: 25px auto;
+  text-align: left;
+}
+section article .title h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+section article .title p {
+  font-size: 13px;
+}
+section article .content {
+  width: 95%;
+  margin: 30px auto;
+}
+section article .content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+section article .content h5 {
+  font-size: 15px;
+  margin: 10px 0px;
+}
+section article .content p {
+  font-size: 13px;
+}
+section article .content img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+section article .btn {
+  width: 95%;
+  margin: 20px auto;
+}
+section article .btn a {
+  display: block;
+}
+section article .btn a::after {
+  content: ">";
+  margin-left: 10px;
+}
+section article .btn a:hover {
+  font-weight: 700;
+}
+section article .swiper {
+  width: 95%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
+section article .swiper .swiper-slide {
+  position: relative;
+  text-align: center;
+}
+section article .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section article .swiper .swiper-slide .slide-text {
+  position: absolute;
+  width: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  transition: 0.5s;
+}
+section article .swiper .swiper-slide .slide-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+}
+section article .swiper .swiper-slide .slide-text h5 {
+  font-size: 15px;
+  margin: 5px 0px;
+}
+section article .swiper .swiper-slide .slide-text p {
+  font-size: 14px;
+}
+section article .search {
+  width: 95%;
+  margin: 10px auto;
+}
+section article .search #searchInput {
+  width: 85%;
+  height: 50px;
+  border: 5px solid #000;
+}
+section article .search button {
+  width: 14%;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  border-style: none;
+}
