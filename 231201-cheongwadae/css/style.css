@@ -1,0 +1,60 @@
+@import url(/reset.css);
+@font-face {
+    font-family: 'Pretendare-M';
+    src: url(./font/Pretendard-Medium.woff2);
+    }
+@font-face {
+    font-family: 'Pretendare-R';
+    src: url(./font/Pretendard-Regular.woff2);
+    }
+
+/*index*/
+.landing_top{position: absolute; align-items: center; left: 3.6rem; top: 3.0rem; display: flex; }
+.landing_top ul{display: flex;}
+.landing_top li{display: flex;}
+.landing_top h1{margin-right: 10px;}
+.landing_top img{margin-right: 10px;}
+.landing_top a{margin-bottom: 8px;}
+
+h2{margin: 0px 0px 48px;}
+.landing_content{text-align: center; width: 756px; margin: 0px auto; padding: 154.8px 0px 0px;}
+.landing_content p{font-size: 19.8px;}
+
+.landing_content .content_btn{display: inline-block; margin: 40px 0px 0px;}
+.landing_content ul{display: flex; text-align: center; align-items: center;}
+.landing_content a{font-size: 28px; border-radius: 10px; border: none; margin: 32px 0px 0px; padding: 35px 20px; font-family: Pretendare-M; display: block; width: 260px;}
+
+.landing_content .btn1{background: #0D9ab4; color: white; text-decoration: none; padding: 42.4px 20px; margin: 5px; border: 3px solid transparent;}
+.landing_content .btn1:hover{background: white; border: 3px solid #0D9ab4; color: #0D9ab4;}
+
+.landing_content .btn2{background: #f74763; color: white; text-decoration: none; padding: 42.4px 20px; margin: 5px; border: 3px solid transparent;}
+.landing_content .btn2:hover{background: white; border: 3px solid #f74763; color: #f74763;}
+
+
+
+/*preview*/
+.preview img{margin: 20px;}
+.top_menu{display: inline-block; padding: 30px 10px; font-size: 18px; position: absolute; right: 20px; top: 0px;}
+.top_menu a{text-decoration: none; color: #fff;}
+
+.con{margin: 0px 178px; padding: 115px 20px 80px;}
+
+.content{text-align: center;}
+.content h1{font-size: 70px; color: #fff; text-shadow: 2px 2px 2px #000;}
+.content div{display: inline-block;}
+.content p{margin-top: 5px;}
+
+.content .content_btn{display: inline-block; margin: 40px 0px 0px;}
+.content ul{display: flex; text-align: center; align-items: center;}
+.content a{font-size: 24px; border-radius: 30px; border: none; padding: 42px 5px; display: block;}
+.content .btn p{width: 350px; font-size: 24px; font-family: Pretendare-M;}
+
+.content .btn {text-decoration: none; background-color: #ffffffcc; border-radius: 10px; display: block; margin: 10px;}
+.content .btn img{margin:  0px;}
+
+
+.content2{color: #ffffff; text-align: center; font-size: 20px; text-shadow: 5px 5px 5px #000;}
+.content2 b{color: #ffa500;}
+.title{margin: 45px 0px 0px; padding: 0px 0px 10px;}
+.sub_title{margin: 45px 0px 0px; padding: 0px 0px 10px;}
+.num_title{font-size: 24px; margin: 45px 0px 0px; padding: 0px 0px 10px;}
