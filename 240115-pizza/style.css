@@ -1,0 +1,102 @@
+:root{
+    --main-color1--:#FF143C;
+    --main-color2--: #1382FF;
+}
+
+*{box-sizing: border-box;}
+
+body{position: relative;}
+main{padding: 60px 0px;}
+
+.flex{display: flex;}
+
+body>h1{padding: 8px;}
+.title{font-size: 64px; text-align: center;}
+
+.art2 .tit1 h2{color: var(--main-color1--);}
+.art2 .tit2 h2{color: var(--main-color2--);}
+
+.art2 .menu img{border-radius: 99px; width: 24px; height: 24px; padding: 3px;}
+.art2 .tit1 img{background: var(--main-color1--); border-radius: 99px;}
+.art2 .tit2 img{background: var(--main-color2--); border-radius: 99px;}
+
+.art3{color: #ffffff; gap: 1rem;}
+.art3 .art3-1{background: var(--main-color1--);}
+.art3 .art3-2{background: var(--main-color2--);}
+
+figcaption{font-size: 60px; margin-bottom: 15px;}
+.art3 figcaption{font-size: 40px;}
+h2{font-size: 28px;}
+p{font-size: 14px; color: #888888; margin-top: 5px;}
+
+.art2 .menu a{align-items: center; gap: 5px; justify-content: center;}
+.art2 .menu li{width: 50%;}
+
+article{text-align: center;}
+
+.box{background: #ffffff; border-radius: 15px;
+    padding: 15px 0px; box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; 
+    display: flex; flex-direction: column;
+    justify-content: center; height: 100%;}
+
+section{flex-wrap: wrap; justify-content: center;}
+
+footer{margin-top: 39px; width: 100%; padding: 25px;
+background: #F6F6F6;}
+.footer-wrap{flex-direction: column; align-items: baseline;}
+.footer-contents{gap: 15px; align-items: end;}
+
+.object img{position: absolute;}
+.pizza{width: 270px; top: -97px; right: 30px;
+    animation-name: pizzaAni;
+    animation-direction: alternate; animation-iteration-count: infinite;
+    animation-duration: 1.5s; animation-delay: 1s;}
+.pizza2{width: 110px; 
+    bottom: 250px; left: 100px; transform: rotate(-45deg);
+    animation-name: pizzaAni2;
+    animation-direction: alternate; animation-iteration-count: infinite;
+    animation-duration: 2s; animation-delay: 1s;}
+.tomato{top: 105px; left: 110px;
+    animation-name: tomatoAni; 
+    animation-direction: alternate; animation-iteration-count: infinite;
+    animation-duration: 1s; animation-delay: 1s;}
+.sweet-pepper{bottom: 0px; right: 0px; width: 300px;}
+
+@keyframes tomatoAni{
+    from{top: 105px; left: 110px;}
+    to{top: 80px; left: 100px;}
+}
+@keyframes pizzaAni{
+    from{top: -97px; right: 30px;}
+    to{top: -80px; right: 30px;}
+}
+@keyframes pizzaAni2{
+    from{bottom: 250px; left: 100px;}
+    to{bottom: 230px; left: 120px;}
+}
+
+@media screen and (max-width:719px){
+    article{width: 100%; }
+    .art1,.art2{width: 95%; margin: 1rem;}
+    .art3 .list{width: 50%;}
+    .art3{display: flex; padding: 0px 1rem; height: 150px;}
+    .title{margin-bottom: 30px;}
+    .object{display: none;}
+}
+@media screen and (min-width:720px){
+    .art1,.art2{width: 43.5%; height: 300px; margin: 0px 1rem;}
+    .art3 .box{width: 100%; height: 180px;}
+    .art3{padding: 0px 1rem; width: 97%;}
+    .title{margin-bottom: 50px;}
+    .art3-1{margin: 1rem 0px;}
+    .object{display: none;}
+}
+@media screen and (min-width:991px){
+    section{display: flex; width: 991px; margin: auto;}
+    .art1{width: 28%; padding: 15px; height: 400px; }
+    .art2{width: 35%; padding: 15px; height: 400px; }
+    .art3{width: 28%;}
+    .art3 .box{padding: 1rem 0px; height: 48%;}
+    .art3-1{margin: 0px 0px 1rem 0px;}
+    .object{display: block;}
+}
