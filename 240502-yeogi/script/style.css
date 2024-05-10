@@ -1,0 +1,541 @@
+:root {
+  --main-color: #FA0008;
+  --bg-color: #FFC3C9;
+  --black: #000000;
+  --gray: #404040;
+}
+
+@font-face {
+  font-family: "yg-jalnan";
+  src: url(../font/Jalnan2.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JalnanGothic";
+  src: url(../font/JalnanGothic.otf);
+}
+@font-face {
+  font-family: "Pretendard-Black";
+  src: url(../font/Pretendard-Black.woff2);
+}
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url(../font/Pretendard-SemiBold.woff2);
+}
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url(../font/Pretendard-Medium.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard-Medium";
+}
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body li,
+html li {
+  list-style: none;
+}
+body a,
+html a {
+  text-decoration: none;
+  color: inherit;
+}
+body img,
+html img {
+  vertical-align: top;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+section h1 {
+  color: var(--black);
+  font-size: 30px;
+  font-family: "JalnanGothic";
+}
+section h1 span {
+  margin-right: 30px;
+  display: block;
+}
+
+#title {
+  background: url(../img/title_bg.png) var(--bg-color) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+#title img {
+  position: absolute;
+  top: 23%;
+  right: -1%;
+  width: 37%;
+}
+
+#sec1 {
+  text-align: left;
+}
+#sec1 h1 {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+}
+#sec1 .text-wrap {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+#sec1 .text-wrap h2 {
+  color: var(--main-color);
+  font-size: 70px;
+  margin-bottom: 40px;
+  font-family: "Pretendard-Black";
+}
+#sec1 .text-wrap p {
+  color: var(--gray);
+  font-size: 30px;
+  font-family: "Pretendard-SemiBold";
+}
+
+#sec2 {
+  text-align: left;
+  align-items: end;
+}
+#sec2 .text-wrap {
+  position: absolute;
+  top: 25%;
+  left: 7%;
+}
+#sec2 .text-wrap p {
+  display: block;
+  color: var(--gray);
+  font-family: "Pretendard-Medium";
+  font-size: 30px;
+}
+#sec2 ul {
+  margin-right: 100px;
+  text-align: right;
+}
+#sec2 ul li {
+  color: var(--main-color);
+  font-size: 70px;
+  margin-bottom: 40px;
+  font-family: "Pretendard-Black";
+}
+
+#sec3 {
+  background-color: var(--bg-color);
+  border-radius: 99px 99px 0px 0px;
+}
+#sec3 ul {
+  width: 50%;
+  height: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+#sec3 ul li {
+  width: 250px;
+  height: 250px;
+  border: 5px solid var(--gray);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec3 ul li p {
+  width: 200px;
+  font-size: 25px;
+  color: var(--gray);
+  font-family: "Pretendard-Black";
+}
+#sec3 ul li p span {
+  color: var(--main-color);
+  font-family: "Pretendard-Black";
+}
+
+#sec4 {
+  background-color: var(--bg-color);
+}
+#sec4 ul {
+  margin-top: 50px;
+}
+#sec4 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec4 ul li p {
+  font-size: 25px;
+  color: var(--gray);
+  font-family: "Pretendard-Black";
+}
+#sec4 ul li p span {
+  color: var(--main-color);
+  font-family: "Pretendard-Black";
+}
+
+#sec5 {
+  flex-direction: column;
+}
+#sec5 .persona_wrap {
+  display: flex;
+  gap: 100px;
+}
+#sec5 .persona_wrap .persona {
+  position: relative;
+  width: 35vw;
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: var(--bg-color);
+  padding: 40px 30px;
+}
+#sec5 .persona_wrap .persona .per {
+  margin: 40px 0px;
+}
+#sec5 .persona_wrap .persona h2 {
+  font-size: 40px;
+  text-align: left;
+  font-family: "JalnanGothic";
+}
+#sec5 .persona_wrap .persona span {
+  font-size: 25px;
+  position: absolute;
+  top: 8%;
+  left: 25%;
+}
+#sec5 .persona_wrap .persona h3 {
+  font-size: 35px;
+  text-align: left;
+  font-family: "JalnanGothic";
+  color: var(--main-color);
+}
+#sec5 .persona_wrap .persona p {
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+#sec6 {
+  background-color: #F5F5F5;
+}
+
+#sec7 {
+  text-align: left;
+}
+#sec7 ul {
+  margin-top: 50px;
+}
+#sec7 ul li {
+  margin: 20px;
+  width: 1000px;
+  height: 200px;
+  border: 5px solid var(--gray);
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+#sec7 ul li:nth-child(2) h2 {
+  color: #838383;
+}
+#sec7 ul li:nth-child(3) h2 {
+  color: #E45779;
+}
+#sec7 ul li h2 {
+  font-family: "JalnanGothic";
+  font-size: 35px;
+  color: #EE8C34;
+}
+#sec7 ul li h2 span {
+  font-family: "JalnanGothic";
+  font-size: 35px;
+}
+#sec7 ul li h2 span:nth-child(1) {
+  color: #497798;
+}
+#sec7 ul li h2 span:nth-child(2) {
+  color: #C75541;
+}
+#sec7 ul li p {
+  font-size: 25px;
+  color: var(--gray);
+  width: 250px;
+  font-family: "Pretendard-SemiBold";
+}
+
+#sec8 {
+  gap: 50px;
+}
+#sec8 .target {
+  width: 1000px;
+  height: 310px;
+  border-radius: 30px;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  padding: 0px 50px;
+}
+#sec8 .target:nth-child(1) {
+  text-align: left;
+}
+#sec8 .target:nth-child(2) {
+  text-align: right;
+}
+#sec8 .target h2 {
+  font-family: "JalnanGothic";
+  font-size: 30px;
+  color: var(--main-color);
+}
+#sec8 .target p {
+  font-family: "Pretendard-SemiBold";
+  font-size: 30px;
+  color: var(--gray);
+}
+
+#sec9 .app_text {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+#sec9 .app_text h1 {
+  font-family: "JalnanGothic";
+  font-size: 40px;
+  display: flex;
+}
+#sec9 .app_text h1 span {
+  font-family: "JalnanGothic";
+}
+#sec9 .app_text p {
+  width: 500px;
+  font-size: 28px;
+  color: #585858;
+  margin-top: 100px;
+}
+#sec9 .app_img {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 40%;
+}
+#sec9 .app_img img {
+  width: 100%;
+}
+
+#sec10 .app_text {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  text-align: left;
+}
+#sec10 .app_text h1 {
+  font-family: "JalnanGothic";
+  font-size: 40px;
+  display: flex;
+}
+#sec10 .app_text h1 span {
+  font-family: "JalnanGothic";
+}
+#sec10 .app_text p {
+  width: 500px;
+  font-size: 28px;
+  color: #585858;
+  margin-top: 100px;
+}
+#sec10 .app_img {
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  width: 40%;
+}
+#sec10 .app_img img {
+  width: 100%;
+}
+
+#sec11 .app_text {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+#sec11 .app_text h1 {
+  font-family: "JalnanGothic";
+  font-size: 40px;
+  display: flex;
+}
+#sec11 .app_text h1 span {
+  font-family: "JalnanGothic";
+}
+#sec11 .app_text p {
+  width: 500px;
+  font-size: 28px;
+  color: #585858;
+  margin-top: 100px;
+}
+#sec11 .app_img {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  width: 40%;
+}
+#sec11 .app_img img {
+  width: 100%;
+}
+
+#sec13 {
+  background-color: var(--bg-color);
+}
+#sec13 h1 {
+  position: absolute;
+  top: 85px;
+  left: 85px;
+}
+#sec13 img {
+  width: 60%;
+  position: absolute;
+  bottom: 85px;
+  right: 85px;
+}
+
+#sec14 {
+  background-color: var(--bg-color);
+  text-align: left;
+}
+#sec14 h1 {
+  position: absolute;
+  top: 85px;
+  left: 85px;
+}
+#sec14 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 50px 0px;
+}
+#sec14 ul li:nth-child(1) h2 {
+  font-family: "yg-jalnan";
+}
+#sec14 ul li:nth-child(2) h2 {
+  font-family: "JalnanGothic";
+}
+#sec14 ul li:nth-child(3) h2 {
+  font-family: "Pretendard-Black";
+}
+#sec14 ul li h2 {
+  width: 500px;
+  color: var(--main-color);
+  font-size: 50px;
+}
+#sec14 ul li p {
+  width: 800px;
+  font-size: 25px;
+  color: var(--gray);
+}
+
+#sec15 {
+  background-color: var(--bg-color);
+  text-align: left;
+  border-radius: 0px 0px 99px 99px;
+}
+#sec15 h1 {
+  position: absolute;
+  top: 85px;
+  left: 85px;
+}
+#sec15 img {
+  width: 30%;
+}
+#sec15 p {
+  width: 30%;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  color: var(--black);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32.5px;
+  flex-direction: column;
+  gap: 25px;
+}
+footer::before {
+  content: "";
+  background: url(../img/Ellipse.svg) repeat-x center;
+  background-size: 75px;
+  position: absolute;
+  top: calc(0% - 32.5px);
+  width: 100%;
+  height: 75px;
+}
+footer h2 {
+  font-family: "yg-jalnan";
+}
+footer h2 a {
+  color: var(--main-color);
+  font-family: "yg-jalnan";
+  transition: 0.35s;
+}
+footer h2 a:hover {
+  color: var(--gray);
+}
+footer p {
+  font-family: "Pretendard-Black";
+  font-size: 25px;
+  color: var(--gray);
+}
+footer p.thank {
+  position: absolute;
+  bottom: 2%;
+  color: var(--black);
+}
+footer span {
+  font-family: "yg-jalnan";
+  font-size: 20px;
+  position: absolute;
+  right: 32%;
+  top: 34%;
+  rotate: 20deg;
+  animation: spanAni 2s linear infinite;
+}
+
+@keyframes spanAni {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
