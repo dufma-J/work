@@ -273,81 +273,149 @@ section h1 span::before {
 #sec4 {
   flex-direction: column;
 }
-#sec4 h2 {
+#sec4 .wrap {
+  display: flex;
+  margin-top: 50px;
+}
+#sec4 .key {
+  width: 20vw;
+  height: 20vw;
+  background-color: var(--primary-color);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+}
+#sec4 .key h2 {
   font-size: 80px;
-  font-family: "GmarketSansLight";
-  margin: 20px 0px;
+  font-family: "GmarketSansBold";
+}
+#sec4 ul {
+  margin-left: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#sec4 ul::before {
+  content: "";
+  width: 5vw;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: -11.3%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+#sec4 ul li {
+  width: 12vw;
+  height: 12vw;
+  border-radius: 999px;
+  border: 3px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1vw;
+  margin: 0px -20px;
 }
 
 #sec5 {
-  flex-direction: column;
+  background-color: var(--primary-color);
+}
+#sec5 h1 {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  color: #fff;
 }
 #sec5 .persona_wrap {
-  display: flex;
-  gap: 100px;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 #sec5 .persona_wrap .persona {
   position: relative;
-  width: 35vw;
-  border-radius: 35px;
-  background-color: var(--secondary-color);
+  width: 50vw;
+  border-radius: 10px;
+  background-color: #fff;
   padding: 40px 30px;
-  box-shadow: var(--inner-shadow);
+  margin: 50px 0px;
 }
 #sec5 .persona_wrap .persona .per {
-  margin: 40px 0px;
+  margin: 20px 0px;
+  position: relative;
+  color: #3f3f3f;
+}
+#sec5 .persona_wrap .persona .needs {
+  margin-top: 50px;
+  position: relative;
+}
+#sec5 .persona_wrap .persona .needs::before {
+  content: "";
+  width: 45vw;
+  height: 3px;
+  background-color: #3f3f3f;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 #sec5 .persona_wrap .persona h2 {
-  font-size: 40px;
+  font-size: 1.8vw;
   text-align: left;
   font-family: "GmarketSansBold";
 }
 #sec5 .persona_wrap .persona span {
-  font-size: 25px;
+  font-size: 1vw;
   position: absolute;
-  top: 8%;
-  left: 25%;
+  top: 13%;
+  left: 16%;
 }
 #sec5 .persona_wrap .persona h3 {
-  font-size: 35px;
+  font-size: 1.8vw;
   text-align: left;
   font-family: "GmarketSansBold";
   color: var(--primary-color);
 }
 #sec5 .persona_wrap .persona p {
-  font-size: 20px;
+  font-size: 1vw;
   text-align: left;
   margin-top: 10px;
 }
 
 #sec6 {
-  flex-direction: column;
+  background-color: var(--primary-color);
+}
+#sec6 h1 {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  color: #fff;
 }
 #sec6 img {
   width: 90%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #sec7 {
   flex-direction: column;
 }
+#sec7 .inner ul {
+  margin-top: 50px;
+}
 #sec7 .inner ul li {
   display: flex;
   align-items: center;
-  margin: 20px 0px;
+  margin: -40px 0px;
   gap: 40px;
-}
-#sec7 .inner ul li.title {
-  margin-left: 12vw;
-}
-#sec7 .inner ul li.title .box {
-  height: 2vw;
-  font-size: 25px;
-  font-family: "GmarketSansBold";
-  box-shadow: 0px 0px 0px #000;
 }
 #sec7 .inner ul li h2 {
   width: 10vw;
-  color: var(--primary-color);
   font-size: 30px;
   font-family: "GmarketSansBold";
 }
@@ -359,17 +427,29 @@ section h1 span::before {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  box-shadow: var(--inner-shadow);
 }
 #sec7 .inner ul li .box.box1 {
-  background-color: var(--secondary-color);
-}
-#sec7 .inner ul li .box.box2 {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: #fff;
+  width: 12vw;
+  height: 12vw;
+  border-radius: 999px;
+  position: relative;
+}
+#sec7 .inner ul li .box.box1::before {
+  content: "";
+  width: 5vw;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  right: -31%;
+  z-index: -1;
+}
+#sec7 .inner ul li .box.box1 p {
+  width: 8vw;
 }
 #sec7 .inner ul li .box span {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 #sec8 {

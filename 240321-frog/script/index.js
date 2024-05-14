@@ -13,7 +13,7 @@ ScrollTrigger.create({
 
 const ani1 = gsap.timeline()
 ani1.from('#sec1 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
-    .from('#sec1 ul', { autoAlpha: 0, delay: 0.5 }, 'text')
+    .from('#sec1 ul', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani1,
     trigger: '#sec1',
@@ -24,7 +24,7 @@ ScrollTrigger.create({
 
 const ani2 = gsap.timeline()
 ani2.from('#sec2 h2', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
-    .from('#sec2 ul', { autoAlpha: 0, delay: 0.5 }, 'text')
+    .from('#sec2 ul', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani2,
     trigger: '#sec2',
@@ -35,7 +35,7 @@ ScrollTrigger.create({
 
 const ani3 = gsap.timeline()
 ani3.from('#sec3 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
-    .from('#sec3 ul', { autoAlpha: 0, delay: 0.5 }, 'text')
+    .from('#sec3 ul', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani3,
     trigger: '#sec3',
@@ -45,7 +45,8 @@ ScrollTrigger.create({
 })
 
 const ani4 = gsap.timeline()
-ani4.from('#sec4 h2', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
+ani4.from('#sec4 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
+    .from('#sec4 .wrap', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani4,
     trigger: '#sec4',
@@ -55,9 +56,9 @@ ScrollTrigger.create({
 })
 
 const ani5 = gsap.timeline()
-ani5.from('#sec5 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec5 .per1', { autoAlpha: 0, xPercent: -100, delay: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec5 .per2', { autoAlpha: 0, xPercent: 100, delay: 1, stagger: 0.3 }, 'text')
+ani5.from('#sec5 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
+    .from('#sec5 .per1', { autoAlpha: 0, xPercent: 100, duration: 0.5, delay: 0.5 }, 'text')
+    .from('#sec5 .per2', { autoAlpha: 0, xPercent: 100, duration: 0.5, delay: 1 }, 'text')
 ScrollTrigger.create({
     animation: ani5,
     trigger: '#sec5',
@@ -68,7 +69,7 @@ ScrollTrigger.create({
 
 const ani6 = gsap.timeline()
 ani6.from('#sec6 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec6 img', { autoAlpha: 0, xPercent: -100, delay: 0.5 }, 'text')
+    .from('#sec6 img', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani6,
     trigger: '#sec6',
@@ -79,7 +80,7 @@ ScrollTrigger.create({
 
 const ani7 = gsap.timeline()
 ani7.from('#sec7 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec7 li', { autoAlpha: 0, scale: 0, delay: 1, stagger: 0.3 }, 'text')
+    .from('#sec7 li', { autoAlpha: 0, delay: 0.5, duration: 0.5, stagger: 0.3 }, 'text')
 ScrollTrigger.create({
     animation: ani7,
     trigger: '#sec7',
