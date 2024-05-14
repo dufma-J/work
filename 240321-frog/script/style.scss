@@ -61,8 +61,8 @@ section {
 
     h1 {
         margin-bottom: 30px;
-        color: var(--dark-color);
-        font-size: 56px;
+        color: #000;
+        font-size: 50px;
         font-family: 'GmarketSansBold';
 
         span {
@@ -131,23 +131,27 @@ section {
     flex-direction: column;
 
     ul {
+        display: flex;
+        margin-top: 50px;
+
         li {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50vw;
-            height: 5vw;
-            margin: 15px 0px;
+            width: 22vw;
+            height: 22vw;
+            margin: -30px;
             background-color: var(--primary-color);
-            border-radius: 30px;
-            box-shadow: var(--inner-shadow);
+            border-radius: 999px;
             font-size: 1.1vw;
 
             p {
-                color: var(--secondary-color);
+                width: 14vw;
+                color: #fff;
 
                 span {
-                    color: #fff;
+                    color: var(--secondary-color);
+                    font-family: 'GmarketSansBold';
                 }
             }
         }
@@ -155,107 +159,141 @@ section {
 }
 
 #sec2 {
+    flex-direction: column;
 
     .title {
-        width: 60vw;
-        position: absolute;
-        top: 20%;
         font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 45vw;
 
         h2 {
             font-family: 'GmarketSansBold';
-            color: var(--primary-color);
-
-            &:nth-child(1) {
-                position: absolute;
-                left: 5.5%;
-            }
 
             &:nth-child(2) {
-                position: absolute;
-                right: 9%;
+                margin-right: 100px;
+            }
+        }
+
+    }
+
+    .wrap {
+        display: flex;
+        margin-top: 50px;
+
+        ul {
+            margin: 30px;
+
+            &.text1 {
+                li {
+                    width: 12vw;
+                    height: 12vw;
+                    margin: -40px 0px;
+                    background-color: var(--primary-color);
+                    color: #fff;
+                    border-radius: 999px;
+
+                    p {
+                        width: 80%;
+                    }
+                }
+            }
+
+            &.text2 {
+                li {
+                    position: relative;
+                    width: 12vw;
+                    height: 12vw;
+                    margin: -40px 0px;
+                    border: 1px solid var(--primary-color);
+                    background-color: #fff;
+                    color: #000;
+                    border-radius: 999px;
+
+                    &::before {
+                        content: '';
+                        width: 10vw;
+                        height: 3px;
+                        background-color: var(--primary-color);
+                        position: absolute;
+                        left: -50%;
+                        z-index: -1;
+                    }
+
+                    p {
+                        width: 80%;
+                    }
+
+                    span {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            &.text3 {
+                li {
+                    width: 20vw;
+                    height: 12vw;
+                    margin: -40px 0px;
+                    text-align: left;
+
+                    p {
+                        width: 15vw;
+                    }
+
+                    span {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.1vw;
             }
         }
     }
-
-    ul {
-        margin: 30px;
-
-        &.text1 {
-            li {
-                width: 15vw;
-                height: 5vw;
-                margin: 30px 0px;
-                background-color: var(--primary-color);
-                color: #fff;
-
-                p {
-                    width: 80%;
-                }
-            }
-        }
-
-        &.text2 {
-            li {
-                width: 20vw;
-                height: 5vw;
-                margin: 30px 0px;
-                background-color: var(--light-color);
-                color: #000;
-
-                p {
-                    width: 80%;
-                }
-
-                span {
-                    color: var(--primary-color);
-                }
-            }
-        }
-
-        &.text3 {
-            li {
-                width: 20vw;
-                height: 5vw;
-                margin: 30px 0px;
-                background-color: var(--dark-color);
-                color: #fff;
-
-                span {
-                    color: var(--primary-color);
-                }
-            }
-        }
-
-        li {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 30px;
-            box-shadow: var(--inner-shadow);
-            font-size: 1.1vw;
-        }
-    }
-
 }
 
 #sec3 {
     flex-direction: column;
 
     .wrap {
-        display: flex;
+        margin-top: 50px;
     }
 
     ul {
         margin: 30px;
+        display: flex;
+        justify-content: space-between;
 
         &.text1 {
+            width: 60vw;
+
             li {
-                width: 20vw;
-                height: 5vw;
+                width: 12vw;
+                height: 12vw;
                 margin: 30px 0px;
                 background-color: var(--primary-color);
+                border-radius: 999px;
                 color: #fff;
+                margin: 0px 2.5vw;
+
+                &:nth-child(2) {
+                    background-color: var(--secondary-color);
+                    color: #000;
+
+                    &::before{
+                        content: '';
+                        width: 35vw;
+                        height: 3px;
+                        background-color: var(--primary-color);
+                        position: absolute;
+                        z-index: -1;
+                    }
+                }
 
                 p {
                     width: 80%;
@@ -265,10 +303,9 @@ section {
 
         &.text2 {
             li {
-                width: 35vw;
+                width: 18vw;
                 height: 5vw;
                 margin: 30px 0px;
-                background-color: var(--light-color);
                 color: #000;
 
                 p {
@@ -285,8 +322,6 @@ section {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 30px;
-            box-shadow: var(--inner-shadow);
             font-size: 1.1vw;
         }
     }

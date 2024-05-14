@@ -56,8 +56,8 @@ section {
 }
 section h1 {
   margin-bottom: 30px;
-  color: var(--dark-color);
-  font-size: 56px;
+  color: #000;
+  font-size: 50px;
   font-family: "GmarketSansBold";
 }
 section h1 span {
@@ -112,85 +112,104 @@ section h1 span::before {
 #sec1 {
   flex-direction: column;
 }
+#sec1 ul {
+  display: flex;
+  margin-top: 50px;
+}
 #sec1 ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50vw;
-  height: 5vw;
-  margin: 15px 0px;
+  width: 22vw;
+  height: 22vw;
+  margin: -30px;
   background-color: var(--primary-color);
-  border-radius: 30px;
-  box-shadow: var(--inner-shadow);
+  border-radius: 999px;
   font-size: 1.1vw;
 }
 #sec1 ul li p {
-  color: var(--secondary-color);
-}
-#sec1 ul li p span {
+  width: 14vw;
   color: #fff;
 }
+#sec1 ul li p span {
+  color: var(--secondary-color);
+  font-family: "GmarketSansBold";
+}
 
+#sec2 {
+  flex-direction: column;
+}
 #sec2 .title {
-  width: 60vw;
-  position: absolute;
-  top: 20%;
   font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 45vw;
 }
 #sec2 .title h2 {
   font-family: "GmarketSansBold";
-  color: var(--primary-color);
-}
-#sec2 .title h2:nth-child(1) {
-  position: absolute;
-  left: 5.5%;
 }
 #sec2 .title h2:nth-child(2) {
-  position: absolute;
-  right: 9%;
+  margin-right: 100px;
 }
-#sec2 ul {
+#sec2 .wrap {
+  display: flex;
+  margin-top: 50px;
+}
+#sec2 .wrap ul {
   margin: 30px;
 }
-#sec2 ul.text1 li {
-  width: 15vw;
-  height: 5vw;
-  margin: 30px 0px;
+#sec2 .wrap ul.text1 li {
+  width: 12vw;
+  height: 12vw;
+  margin: -40px 0px;
   background-color: var(--primary-color);
   color: #fff;
+  border-radius: 999px;
 }
-#sec2 ul.text1 li p {
+#sec2 .wrap ul.text1 li p {
   width: 80%;
 }
-#sec2 ul.text2 li {
-  width: 20vw;
-  height: 5vw;
-  margin: 30px 0px;
-  background-color: var(--light-color);
+#sec2 .wrap ul.text2 li {
+  position: relative;
+  width: 12vw;
+  height: 12vw;
+  margin: -40px 0px;
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
   color: #000;
+  border-radius: 999px;
 }
-#sec2 ul.text2 li p {
+#sec2 .wrap ul.text2 li::before {
+  content: "";
+  width: 10vw;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: -50%;
+  z-index: -1;
+}
+#sec2 .wrap ul.text2 li p {
   width: 80%;
 }
-#sec2 ul.text2 li span {
+#sec2 .wrap ul.text2 li span {
   color: var(--primary-color);
 }
-#sec2 ul.text3 li {
+#sec2 .wrap ul.text3 li {
   width: 20vw;
-  height: 5vw;
-  margin: 30px 0px;
-  background-color: var(--dark-color);
-  color: #fff;
+  height: 12vw;
+  margin: -40px 0px;
+  text-align: left;
 }
-#sec2 ul.text3 li span {
+#sec2 .wrap ul.text3 li p {
+  width: 15vw;
+}
+#sec2 .wrap ul.text3 li span {
   color: var(--primary-color);
 }
-#sec2 ul li {
+#sec2 .wrap ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  box-shadow: var(--inner-shadow);
   font-size: 1.1vw;
 }
 
@@ -198,26 +217,44 @@ section h1 span::before {
   flex-direction: column;
 }
 #sec3 .wrap {
-  display: flex;
+  margin-top: 50px;
 }
 #sec3 ul {
   margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#sec3 ul.text1 {
+  width: 60vw;
 }
 #sec3 ul.text1 li {
-  width: 20vw;
-  height: 5vw;
+  width: 12vw;
+  height: 12vw;
   margin: 30px 0px;
   background-color: var(--primary-color);
+  border-radius: 999px;
   color: #fff;
+  margin: 0px 2.5vw;
+}
+#sec3 ul.text1 li:nth-child(2) {
+  background-color: var(--secondary-color);
+  color: #000;
+}
+#sec3 ul.text1 li:nth-child(2)::before {
+  content: "";
+  width: 35vw;
+  height: 3px;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: -1;
 }
 #sec3 ul.text1 li p {
   width: 80%;
 }
 #sec3 ul.text2 li {
-  width: 35vw;
+  width: 18vw;
   height: 5vw;
   margin: 30px 0px;
-  background-color: var(--light-color);
   color: #000;
 }
 #sec3 ul.text2 li p {
@@ -230,8 +267,6 @@ section h1 span::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
-  box-shadow: var(--inner-shadow);
   font-size: 1.1vw;
 }
 
