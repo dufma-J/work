@@ -178,15 +178,6 @@ section p b {
   margin-top: 0px;
 }
 
-#sec5 {
-  height: 140vh;
-  background: url(../img/MacBook.png) no-repeat center;
-  background-size: cover;
-}
-#sec5 img {
-  height: 100%;
-}
-
 #sec6 {
   background-color: var(--grayColor);
   height: 50vh;
