@@ -20,7 +20,7 @@ ScrollTrigger.create({
 
 const ani2 = gsap.timeline()
 ani2.from('#sec2 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
-    .from('#sec2 p', { autoAlpha: 0, yPercent: -100, duration: 0.5, delay: 0.5 }, 'text')
+    .from('#sec2 p', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
     .from('#sec2 ul li', { autoAlpha: 0, delay: 1.0, stagger: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani2,
@@ -32,7 +32,7 @@ ScrollTrigger.create({
 
 const ani3 = gsap.timeline()
 ani3.from('#sec3 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
-    .from('#sec3 ul li', { autoAlpha: 0, duration: 0.5, delay: 1.0}, 'text')
+    .from('#sec3 ul li', { autoAlpha: 0, duration: 0.5, delay: 1.0 }, 'text')
 ScrollTrigger.create({
     animation: ani3,
     trigger: '#sec3',
@@ -54,8 +54,7 @@ ScrollTrigger.create({
 
 const ani5 = gsap.timeline()
 ani5.from('#sec5 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec5 .per1', { autoAlpha: 0, xPercent: -100, delay: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec5 .per2', { autoAlpha: 0, xPercent: 100, delay: 1, stagger: 0.3 }, 'text')
+    .from('#sec5 .persona', { autoAlpha: 0, yPercent: 100, delay: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani5,
     trigger: '#sec5',
@@ -76,7 +75,7 @@ ScrollTrigger.create({
 
 const ani7 = gsap.timeline()
 ani7.from('#sec7 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5, stagger: 0.3 }, 'text')
-    .from('#sec7 li', { autoAlpha: 0, xPercent: -100, delay: 1, stagger: 0.5 }, 'text')
+    .from('#sec7 li', { autoAlpha: 0, xPercent: 100, delay: 1}, 'text')
 ScrollTrigger.create({
     animation: ani7,
     trigger: '#sec7',
@@ -86,7 +85,8 @@ ScrollTrigger.create({
 })
 
 const ani8 = gsap.timeline()
-ani8.from('#sec8 .target', { autoAlpha: 0, scale: 0, duration: 0.5, stagger: 0.5 }, 'text')
+ani8.from('#sec8 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
+    .from('#sec8 .inner', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani8,
     trigger: '#sec8',
