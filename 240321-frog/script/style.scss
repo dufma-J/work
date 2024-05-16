@@ -972,39 +972,16 @@ section {
     }
 }
 
-.subtract {
-    img {
-        position: absolute;
+#sec17 {
+    flex-direction: column;
 
-        &:nth-child(1) {
-            top: 196vh;
-            left: 0%;
-        }
-
-        &:nth-child(2) {
-            top: 392vh;
-            right: 0%;
-        }
-
-        &:nth-child(3) {
-            top: 463vh;
-            left: 10%;
-        }
-
-        &:nth-child(4) {
-            top: 516vh;
-            left: 33%;
-        }
-
-        &:nth-child(5) {
-            top: 578vh;
-            left: 81%;
-        }
-
-        &:nth-child(6) {
-            top: 785vh;
-            right: 0%;
-        }
+    div{
+        width: 50%;
+p{
+    margin: 30px 0px;
+    text-align: left;
+    font-size: 20px;
+}
     }
 }
 

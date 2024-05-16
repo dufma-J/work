@@ -90,7 +90,7 @@ ScrollTrigger.create({
 })
 
 const ani8 = gsap.timeline()
-ani8.from('#sec8 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5}, 'text')
+ani8.from('#sec8 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
     .from('#sec8 .inner', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani8,
@@ -182,6 +182,16 @@ ani16.from('#sec16 img', { autoAlpha: 0, delay: 0.5 }, 'text')
 ScrollTrigger.create({
     animation: ani16,
     trigger: '#sec16',
+    toggleActions: 'play pause none',
+    start: 'top center',
+    end: 'bottom top'
+})
+const ani17 = gsap.timeline()
+ani17.from('#sec17 h1', { autoAlpha: 0, yPercent: -100, duration: 0.5 }, 'text')
+    .from('#sec17 div', { autoAlpha: 0, delay: 0.5, duration: 0.5 }, 'text')
+ScrollTrigger.create({
+    animation: ani17,
+    trigger: '#sec17',
     toggleActions: 'play pause none',
     start: 'top center',
     end: 'bottom top'
