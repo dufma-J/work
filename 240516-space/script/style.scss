@@ -1,0 +1,433 @@
+:root {
+    --pointColor: #049DBF;
+    --darkColor: #03658C;
+    --darkColor2: #023859;
+    --grayColor: #C9CEDA;
+    --black: #000000;
+    --gray: #4e4e4e;
+    --white: #F2F2F2;
+}
+
+@font-face {
+    font-family: 'Dia_bold';
+    src: url(../font/KBO\ Dia\ Gothic_bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dia_medium';
+    src: url(../font/KBO\ Dia\ Gothic_medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Dia_light';
+    src: url(../font/KBO\ Dia\ Gothic_light.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dia_medium';
+}
+
+body,
+html {
+    width: 100%;
+    overflow-x: hidden;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        vertical-align: top;
+    }
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+
+    h1 {
+        font-size: 3.5vw;
+        font-family: 'Dia_bold';
+    }
+
+    h2 {
+        font-size: 2.5vw;
+        font-family: 'Dia_bold';
+    }
+
+    p {
+        font-size: 1.2vw;
+        margin-top: 100px;
+        line-height: 1.3;
+
+        span {
+            color: var(--pointColor);
+            font-family: 'Dia_bold';
+        }
+
+        b {
+            font-family: 'Dia_bold';
+        }
+    }
+}
+
+#sec1 {
+    background-color: var(--black);
+
+    img {
+        position: absolute;
+        top: -46%;
+        left: -14%;
+    }
+
+    .wrap {
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        text-align: right;
+
+        h1 {
+            color: var(--pointColor);
+        }
+
+        p {
+            font-size: 30px;
+            color: var(--grayColor);
+            margin: 20px 0 50px;
+        }
+
+        a {
+            background-color: var(--pointColor);
+            color: var(--black);
+            font-size: 30px;
+            padding: 10px 20px;
+            border-radius: 999px;
+            transition: 0.35s;
+
+            &:hover {
+                color: var(--pointColor);
+                background-color: var(--black);
+            }
+        }
+    }
+}
+
+#sec2 {
+    background-color: var(--black);
+    overflow: hidden;
+
+    img {
+        width: 53%;
+        position: absolute;
+        top: 44%;
+        left: 59%;
+    }
+
+    .wrap {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        text-align: left;
+        color: var(--white);
+    }
+}
+
+#sec3 {
+    height: 65vh;
+    background-color: var(--white);
+    padding-bottom: 44px;
+
+    h2 {
+        color: var(--pointColor);
+    }
+
+    p {
+        width: 45%;
+        color: var(--gray);
+    }
+
+    &::before {
+        content: '';
+        background: url(../img/vector.png) no-repeat center;
+        width: 100%;
+        height: 44px;
+        position: absolute;
+        top: calc(100% - 44px);
+    }
+}
+
+#sec4 {
+    background-color: var(--white);
+
+    h2 {
+        color: var(--pointColor);
+    }
+
+    ul {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    li {
+        width: 20vw;
+        height: 20vw;
+        border-radius: 999px;
+        background-color: var(--grayColor);
+        margin: 0px -30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 12vw;
+            margin-top: 0px;
+        }
+    }
+}
+
+#sec5 {
+    height: 140vh;
+    background: url(../img/MacBook.png) no-repeat center;
+    background-size: cover;
+
+    img {
+        height: 100%;
+    }
+}
+
+#sec6 {
+    background-color: var(--grayColor);
+    height: 50vh;
+}
+
+#sec7 {
+    background-color: var(--grayColor);
+
+    h2 {
+        position: absolute;
+        top: 124px;
+        left: 182px;
+        color: var(--darkColor);
+    }
+
+    p {
+        position: absolute;
+        top: 124px;
+        right: 182px;
+        width: 18%;
+        text-align: left;
+        color: var(--gray);
+        margin-top: 0px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px -30px;
+
+            width: 14vw;
+            height: 14vw;
+            border-radius: 999px;
+            background-color: var(--white);
+            font-size: 1.6vw;
+
+            &:nth-child(1) {
+                width: 18vw;
+                height: 18vw;
+                border-radius: 999px;
+                background-color: var(--pointColor);
+                font-size: 2.5vw;
+                z-index: 99;
+                margin-right: 5vw;
+            }
+        }
+    }
+}
+
+#sec8 {
+    background-color: var(--grayColor);
+
+    h2 {
+        position: absolute;
+        top: 124px;
+        left: 182px;
+        color: var(--darkColor);
+    }
+
+    div {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 130px;
+
+        p {
+            width: 22%;
+            color: var(--gray);
+            margin-bottom: 80px;
+            text-align: right;
+        }
+    }
+}
+
+#sec9 {
+    background-color: var(--grayColor);
+
+    h2 {
+        position: absolute;
+        top: 124px;
+        left: 182px;
+        color: var(--darkColor);
+    }
+
+    div {
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        text-align: right;
+
+        h3 {
+            font-size: 2.8vw;
+            font-family: 'Dia_bold';
+        }
+
+        P {
+            margin-top: 40px;
+            color: var(--gray);
+        }
+
+        ul {
+            margin-top: 80px;
+
+            li {
+                font-size: 1.8vw;
+                margin: 20px 0px;
+
+                &:nth-child(1) {
+                    font-family: 'Dia_bold';
+
+                    span {
+                        font-family: 'Dia_bold';
+                    }
+                }
+
+                &:nth-child(3) {
+                    font-family: 'Dia_light';
+
+                    span {
+                        font-family: 'Dia_light';
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    left: 45%;
+                    margin-right: 30px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+#sec10 {
+    flex-direction: row;
+    position: relative;
+    margin-top: 320px;
+    background-color: var(--darkColor2);
+    gap: 100px;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 320px;
+        background: url(../img/layered-waves-haikei.svg) no-repeat center;
+        background-size: cover;
+        background-color: var(--grayColor);
+        position: absolute;
+        top: calc(0% - 320px);
+    }
+
+    .text {
+        width: 25%;
+        text-align: right;
+        color: var(--white);
+    }
+}
+
+#sec11 {
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: var(--darkColor2);
+    gap: 100px;
+
+
+    .text {
+        width: 25%;
+        text-align: left;
+        color: var(--white);
+    }
+}
+
+#sec12 {
+    flex-direction: row;
+    position: relative;
+    background-color: var(--darkColor2);
+    gap: 100px;
+
+    .text {
+        width: 25%;
+        text-align: right;
+        color: var(--white);
+    }
+}
+
+#sec13 {
+    flex-direction: row-reverse;
+    position: relative;
+    background-color: var(--darkColor2);
+    gap: 100px;
+
+    .text {
+        width: 25%;
+        text-align: left;
+        color: var(--white);
+    }
+}
+
+#sec14 {
+    flex-direction: row;
+    position: relative;
+    background-color: var(--darkColor2);
+    gap: 100px;
+
+    .text {
+        width: 25%;
+        text-align: right;
+        color: var(--white);
+    }
+}
