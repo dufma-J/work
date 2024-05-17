@@ -1,0 +1,299 @@
+:root {
+  --pointColor: #049DBF;
+  --darkColor: #03658C;
+  --darkColor2: #023859;
+  --grayColor: #C9CEDA;
+  --black: #000000;
+  --gray: #4e4e4e;
+  --white: #F2F2F2;
+}
+
+@font-face {
+  font-family: "Dia_bold";
+  src: url(../font/KBO\ Dia\ Gothic_bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dia_medium";
+  src: url(../font/KBO\ Dia\ Gothic_medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Dia_light";
+  src: url(../font/KBO\ Dia\ Gothic_light.ttf) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dia_medium";
+}
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+body li,
+html li {
+  list-style: none;
+}
+body a,
+html a {
+  text-decoration: none;
+  color: inherit;
+}
+body img,
+html img {
+  vertical-align: top;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+section h1 {
+  font-size: 3.5vw;
+  font-family: "Dia_bold";
+}
+section h2 {
+  font-size: 2.5vw;
+  font-family: "Dia_bold";
+  position: absolute;
+  top: 135px;
+  left: 100px;
+  color: var(--darkColor);
+}
+section p {
+  font-size: 1.2vw;
+  margin-top: 100px;
+  line-height: 1.3;
+}
+section p span {
+  color: var(--pointColor);
+  font-family: "Dia_bold";
+}
+section p b {
+  font-family: "Dia_bold";
+}
+
+#sec1 {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+#sec1 img {
+  position: absolute;
+  top: -52%;
+  left: 58%;
+}
+#sec1 .wrap {
+  position: absolute;
+  top: 63%;
+  left: 10%;
+  text-align: left;
+}
+#sec1 .wrap p {
+  font-size: 25px;
+  margin: 50px 0;
+}
+
+#sec2 {
+  background-color: var(--white);
+}
+#sec2 p {
+  position: absolute;
+  top: 135px;
+  right: 100px;
+  width: 18%;
+  text-align: left;
+  color: var(--gray);
+  margin-top: 0px;
+}
+#sec2 ul {
+  display: flex;
+  align-items: center;
+}
+#sec2 ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px -30px;
+  width: 14vw;
+  height: 14vw;
+  border-radius: 999px;
+  background-color: var(--grayColor);
+  font-size: 1.6vw;
+}
+#sec2 ul li:nth-child(1) {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 999px;
+  background-color: var(--pointColor);
+  font-size: 2.5vw;
+  z-index: 99;
+  margin-right: 5vw;
+}
+
+#sec3 {
+  background-color: var(--white);
+}
+#sec3 ul {
+  display: flex;
+  gap: 50px;
+}
+#sec3 ul li {
+  width: 15vw;
+  height: 15vw;
+  background-color: var(--pointColor);
+  border-radius: 999px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#sec3 ul li h3 {
+  font-size: 2vw;
+  color: var(--white);
+}
+#sec3 ul li p {
+  width: 10vw;
+  margin-top: 30px;
+  font-size: 1.2vw;
+}
+
+#sec4 {
+  background-color: var(--white);
+}
+#sec4 p {
+  position: absolute;
+  top: 135px;
+  right: 100px;
+  width: 18%;
+  text-align: left;
+  color: var(--gray);
+  margin-top: 0px;
+}
+#sec4 img {
+  height: 52%;
+  margin-top: 50px;
+}
+
+#sec5 {
+  height: 50vh;
+  background-color: var(--pointColor);
+  color: var(--white);
+}
+#sec5 h3 {
+  font-size: 2.5vw;
+  font-family: "Dia_bold";
+}
+#sec5 p {
+  font-size: 2vw;
+  margin-top: 30px;
+}
+
+#sec7 {
+  background-color: var(--grayColor);
+}
+#sec7 h2 {
+  position: absolute;
+  top: 124px;
+  left: 182px;
+  color: var(--darkColor);
+}
+#sec7 p {
+  position: absolute;
+  top: 135px;
+  right: 100px;
+  width: 18%;
+  text-align: left;
+  color: var(--gray);
+  margin-top: 0px;
+}
+#sec7 img {
+  height: 40%;
+}
+
+#sec8 {
+  background-color: var(--grayColor);
+}
+#sec8 h2 {
+  position: absolute;
+  top: 124px;
+  left: 182px;
+  color: var(--darkColor);
+}
+#sec8 div {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+#sec8 div p {
+  width: 22%;
+  color: var(--gray);
+  margin-bottom: 80px;
+  text-align: right;
+}
+
+#sec9 {
+  background-color: var(--grayColor);
+}
+#sec9 h2 {
+  position: absolute;
+  top: 124px;
+  left: 182px;
+  color: var(--darkColor);
+}
+#sec9 div {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: right;
+}
+#sec9 div h3 {
+  font-size: 2.8vw;
+  font-family: "Dia_bold";
+}
+#sec9 div P {
+  margin-top: 40px;
+  color: var(--gray);
+}
+#sec9 div ul {
+  margin-top: 80px;
+}
+#sec9 div ul li {
+  font-size: 1.8vw;
+  margin: 20px 0px;
+}
+#sec9 div ul li:nth-child(1) {
+  font-family: "Dia_bold";
+}
+#sec9 div ul li:nth-child(1) span {
+  font-family: "Dia_bold";
+}
+#sec9 div ul li:nth-child(3) {
+  font-family: "Dia_light";
+}
+#sec9 div ul li:nth-child(3) span {
+  font-family: "Dia_light";
+}
+#sec9 div ul li span {
+  position: absolute;
+  left: 45%;
+  margin-right: 30px;
+  text-align: left;
+}
+
+#sec10 {
+  height: 120vh;
+  background: url(../img/Business\ Card.png) no-repeat center;
+  background-size: cover;
+}
